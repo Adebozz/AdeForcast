@@ -9,12 +9,17 @@ export const fetchWeather = async (location: string) => {
       params: {
         q: location,
         appid: process.env.NEXT_PUBLIC_WEATHER_API_KEY,
-        units: 'metric', // or 'imperial' for Fahrenheit
+        units: 'metric',
       },
     });
     return response.data;
   } catch (error) {
-    console.error('Error fetching weather data:', error);
-    throw error;
+    if (axios.isAxiosError(error)) {
+      console.error("Axios error:", error.response?.data);
+      throw new Error(error.response?.data.message || 'An error occurred');
+    } else {
+      throw new Error('An unexpected error occurred.');
+    }
   }
+  
 };
