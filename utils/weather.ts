@@ -18,7 +18,7 @@ export const fetchWeather = async (location: string) => {
       console.error("Axios error:", error.response?.data);
       throw new Error(error.response?.data.message || 'An error occurred');
     } else {
-      throw new Error('An unexpected error occurred.');
+      throw new Error('An unexpected error occurred. why');
     }
   }
   
