@@ -18,6 +18,7 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ data }) => {
       <p>{data.weather && data.weather[0].description}</p>
       <p>Temperature: {data.main?.temp}°C</p>
       <p>Humidity: {data.main?.humidity}%</p>
+      <p></p>
     </div>
   );
 };
