@@ -42,7 +42,7 @@ export default function Home() {
           className="bg-black text-white w-full hover:bg-[#00000080] rounded-md"
           disabled={loading}
         >
-          {loading ? "Loading..." : "Get Weather"}
+          {loading ? "Loading...." : "Get Weather"}
         </button>
       </div>  
       
