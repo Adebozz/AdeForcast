@@ -28,7 +28,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-gray-100 h-screen flex flex-col items-center justify-center">
+    <div className="bg-gray-50 h-screen flex flex-col items-center justify-center">
       <div className="p-8 rounded-lg flex gap-10">
         <input
           type="text"
