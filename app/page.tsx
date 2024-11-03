@@ -29,6 +29,7 @@ export default function Home() {
 
   return (
     <div className="bg-gray-50 h-screen flex flex-col items-center justify-center">
+      <div className="font-medium text-black mt-0 flex">AdeForcast</div>
       <div className="p-8 rounded-lg flex gap-10">
         <input
           type="text"
