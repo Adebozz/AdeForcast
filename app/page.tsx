@@ -28,8 +28,10 @@ export default function Home() {
   };
 
   return (
+    <div>
+      <div className="font-black text-black mt-0 flex p-10 absolute">AdeForcast</div>
     <div className="bg-gray h-screen flex flex-col items-center justify-center">
-      <div className="font-medium text-black mt-0 flex absolute mb-100">AdeForcast</div>
+      
       <div className="p-8 rounded-lg flex gap-10">
         <input
           type="text"
@@ -48,6 +50,7 @@ export default function Home() {
       </div>  
       
       {weatherData && <WeatherCard data={weatherData} />}
+    </div>
     </div>
   );
 }
