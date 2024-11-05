@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="font-black text-black mt-0 flex p-10 absolute">AdeForcast</div>
+      <div className="font-black text-black mt-0 flex p-10 absolute">ADE-ForCast</div>
     <div className="bg-gray h-screen flex flex-col items-center justify-center">
       
       <div className="p-8 rounded-lg flex gap-10">
